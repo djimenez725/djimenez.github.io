@@ -1,0 +1,519 @@
+/* Se establece el tipo de letra en la página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+/* La barra de navegación*/
+.topnav {
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#012241;
+    padding:35px 40px;
+    font-family: "Inter";
+}
+
+.logo {
+    font-weight:bold;
+    color:#f9dce5;
+    margin-left: 120px; /* Permite mover la palabra hacia la izquierda */
+    font-size: 65px;
+    text-decoration: none;
+    font-family: "Inter";
+    
+}
+
+.logo a {
+  color:#f9dce5;
+  text-decoration: none;
+}
+
+/* La barra de navegación y el color de los enlaces*/
+.topnav-links {
+   display: flex;
+   gap: 30px;
+   margin-right:120px;
+
+}
+
+.topnav-links a {
+   font-size: 23px;
+   color: #FED7DF;
+   text-decoration: none;
+  
+}
+
+
+/* La barra de navegación y el cambio de color al detenerse el ratón*/
+.topnav a:hover {
+    background-color:#FED7DF;
+    color: 012241;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #f9dce5;
+    color:#012241;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #012241;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ________________________________________________________________*/
+
+/* Contiene todo el contenido del DIV */ /* Contiene el texto: Hola */
+.intro-container {
+    display:flex;
+    justify-content: space-between;
+    font-size: 53px;
+    font-weight: bold;
+
+}
+
+/* Continuidad del DIV */ /* Contiene el texto: Hola */
+.sub-container {
+    max-width: 500px;
+    margin: 0;
+    padding:5px;
+    margin-left: 65px;
+}
+
+/* Texto de introducción: Hola!*/
+.intro-title {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 105px;
+    padding-top:120px ;
+}
+
+/* Parrafo introductorio.*/
+.body-text {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 3%;
+}
+
+/* Botón de LinkeIn.*/
+button {
+    background-color:#012241;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+    left: 175px;
+    position:absolute;
+    font-family: "Inter";
+    
+}
+
+/* Color del hipervínculo.*/
+button a {
+    color:#f9dce5;
+    text-decoration: none;
+}
+
+
+/*__________________________________________________________*/
+
+
+/* Segunda sección de la página: Información de contacto.*/
+.contact-info {
+    text-align: center;
+    overflow: hidden;
+    width: 200%;  
+}
+
+/* Marco de la imagen.*/
+.photo-box {
+    background-color: #f9dce5;
+    padding: 50px;
+    max-width: 400px;
+    height: 745px;
+    position: relative;
+    top: 165px;
+    left: 230px;
+    display:flex;
+    z-index: 0;
+    
+}
+
+/* La imagen profesional de la estudiante.*/
+.profile-pic {
+    width: 100%;
+    height: 80%;
+    max-width: 150%;
+    border-radius: 5%;
+    position:relative;
+    bottom: 100px;
+}
+
+/* Sección de información de contacto.*/
+.contact-card {
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+   width: 100%;
+   position: relative; 
+   top: -150px;
+   align-items: center;
+  
+}
+
+.contact-item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    top:30px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.contact-item .icon {
+    width:24px;
+    height: 24px;
+
+}
+
+/* Título: Contacto.*/
+.contact-title {
+    font-size: 40px;
+    box-align:center;
+    left:20px;
+    position: relative;
+    font-family: "Anta";  
+
+}
+
+
+/* Sección de educación.*/
+.container-edu {
+  position: absolute;
+  background-color: #012241 ;
+  padding-left: 5px;
+  top: 1190px;
+  width:1465px;
+  height: 700px;
+  z-index: -1;
+}
+
+/* Título: Educación.*/
+.title-edu {
+    color:white;
+    position: relative;
+    top: 20px;
+    left: 130px ;
+}
+
+/* Segmento de información de educación.*/
+.text-block1 {
+    font-size: 24;
+    color:white;
+    position:absolute;
+    top: 205px;
+    left: 100px;
+    font-weight: normal;
+}
+
+/* Segmento de información de educación.*/
+.text-block2 {
+    font-size: 24;
+    color:white;
+    position:absolute;
+    top:270px;
+    left: 100px;
+    font-weight: normal;
+}
+
+/* Sección de experiencias*/
+.container-exp {
+  max-width: 420px;
+  height: 420px;
+  position: absolute;
+  background-color: white ;
+  padding-left: 5px;
+  top: 1550px;
+  left: 180px;
+  z-index: 1;
+}
+
+.title-exp {
+    color:#012241;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Experiencias Laborales*/
+
+.text-exp1 {
+    color: #012241;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.8;
+} 
+
+.text-exp2 {
+    color: #012241;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+} 
+
+/* Botón de Resume.*/
+.btn-resume {
+    background-color: #012241;
+    position: relative;
+    left: 100px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Título: Resume*/
+.title-res1 {
+    position: absolute;
+    font-family: "Anta";
+    font-weight: normal;
+    font-size: 130px;
+    top: 980px;
+    right: 170px;
+    letter-spacing: 15px;
+    color:#fca2b4;
+    z-index: -1;
+}
+
+.title-res2 {
+    position: absolute;
+    font-size: 130px;
+    font-family: "Anta";
+    font-weight: normal;
+    top: 1095px;
+    right: 170px;
+    letter-spacing: 15px;
+    color:white;
+    z-index: -1;
+}
+
+
+/* Secciones de lenguajes de programación.*/
+
+/* ____________________________________________________*/
+
+/*Contenedor que contiene todas las secciones de lenguajes de programación */
+.container-pro {
+    position:absolute;
+    top: 1480px;
+    right: 230px;
+
+}
+
+/*Título: Lenguaje de programación */
+.title-pro {
+    font-size: 25px;
+    color:white;
+    font-style: italic;
+    font-family: Helvetica;
+    white-space: nowrap;
+}
+
+/*Estilo a los títulos de lenguajes de programación. */
+.title-style {
+    font-size: 30px;
+    color:white;
+    position:relative;
+    right: 10px;
+    bottom:11px;
+    line-height: 1.6;
+}
+
+/* Características del icono*/
+.icon {
+    width:40px;
+    height:40px;
+    object-fit: contain;
+    margin-right: 10px;
+    
+}
+
+/*Seccion de lenguajes*/
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ____________________________________________________*/
+
+
+/* Sección de proyectos.*/
+
+/*Contenedor de la imagen de computadora*/
+.project-content {
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+
+/*Contiene el titulo y el texto de descripción*/
+.project-image {
+  border-radius: 10px;
+  position: absolute;
+  top: 1990px;
+  width: 500px;
+  left:140px;
+  height: 400px;
+  align-items: center;
+}
+
+/*Detalla las especificaciones del párrafo*/
+.container-proyectos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #FED7DF ;
+  z-index: -1;
+  padding-left: 5px;
+  top: 1940px;
+  width:1465px;
+  height: 500px;
+}
+
+
+/*Título*/
+.title-proye {
+    
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    left: 850px;
+    max-width: 400px;
+    white-space: nowrap;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/*Descripción del párrafo*/
+.project-text {
+   
+  position: relative;
+  top: 90px;
+  left:850px;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: normal;
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+}
+
+/*Descripción del botón*/
+.project-button {
+  padding: 10px 20px;
+  background-color: #002244;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  top: 100px;
+}
+
+/* _____________________________ */
+
+/*Footer de la página*/
+.footer {
+  position: absolute;
+  top: 2440px;
+  max-width: 1480px;
+  width: 1470px;
+  background:#012241;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  height: 490px;
+}
+
+/*La fila del footer*/
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 60px;
+}
+
+/*La columna del footer*//*Los títulos de la fila del footer*/
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Anta";
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*El estilo de los vínculos*/
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer-col .links li a:hover {
+  color: #f9dce5;
+}
+
+/*El estilo del párrafo*/
+.footer-col p {
+  margin: 20px 0;
+  color: white;
+  position: relative;
+  top:25px;
+  max-width: 300px;
+  font-size: 40px;
+}
+
+/*El estilo de los íconos*/
+.icons {
+  position: relative;
+  top:25px;
+}
+
+.icons-click {
+  text-decoration: none;
+}

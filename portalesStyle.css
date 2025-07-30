@@ -1,0 +1,320 @@
+/* Se establece el tipo de letra en la página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+/* La barra de navegación*/
+.topnav {
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#012241;
+    padding:35px 40px;
+    font-family: "Inter";
+}
+
+.logo {
+    font-weight:bold;
+    color:#f9dce5;
+    margin-left: 120px; /* Permite mover la palabra hacia la izquierda */
+    font-size: 65px;
+    text-decoration: none;
+    
+}
+
+.logo a {
+    color: #f9dce5;
+    text-decoration: none;
+}
+
+/* La barra de navegación y el color de los enlaces*/
+.topnav-links {
+   display: flex;
+   gap: 30px;
+   margin-right:120px;
+   
+}
+
+.topnav-links a {
+   font-size: 23px;
+   color: #FED7DF;
+   text-decoration: none;
+  
+}
+
+
+/* La barra de navegación y el cambio de color al detenerse el ratón*/
+.topnav a:hover {
+    background-color:#FED7DF;
+    color: 012241;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #f9dce5;
+    color:#012241;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #012241;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* _______________________________________________________________*/
+
+
+/* Contendor principal */
+.main-container {
+    background-color: #012241 ;
+    position: relative;
+    max-width: 1620px;
+    width: 1470px;
+    height: 1500px;
+    
+}
+
+/* El titulo de la página: Páaginas Web */
+.title {
+    font-size: 40px;
+    font-family: "Anta";
+    text-align: center;
+    position: relative;
+    top: 45px;
+    color: #f9dce5;
+    white-space: nowrap;
+}
+
+/* Contenedor del primer proyecto y su descripción */
+.first-project {
+    background-color: white;
+    position: relative;
+    max-width: 900px;
+    width: 780px;
+    height: 555px;
+    top: 90px;
+    margin-left: 120px;
+
+}
+
+/* Nombre del proyecto */
+.project-title {
+
+    font-family: "Inter";
+    text-align: left;
+    position: relative;
+    left: 130px;
+    top: 70px;
+    font-size: 28px;
+    color: #012241;
+}
+/* Descripción del proyecto */
+.project-description {
+    font-size: 20px;
+    font-family: "Inter";
+    max-width: 390px;
+    text-align: center;
+    color:#012241;
+    position: relative;
+    top: 90px;
+    left: 30px;
+
+}
+
+/* El botón de visita del proyecto. */
+.button-web {
+    position: relative;
+    top:110px;
+    margin-left: 140px;
+    background-color: #f9dce5; /* light beige */
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 999px; /* pill shape */
+    cursor: pointer;
+    text-decoration: none;
+    color: #012241;
+}
+
+/* La imagen del proyecto */
+.image {
+  position: relative;
+  float: right;
+  max-width: 600px;
+  top:-250px;
+}
+
+/* La imagen del proyecto */
+.side-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 300px;
+
+}
+
+
+/* _______________________________________________________________*/
+
+/* Contenedor del primer proyecto y su descripción */
+.second-project {
+    background-color: white;
+    position: relative;
+    max-width: 900px;
+    width: 780px;
+    height: 490px;
+    top: 90px;
+    margin-left: 120px;
+
+}
+
+/* Descripción del proyecto */
+.project-description2 {
+    font-size: 20px;
+    font-family: "Inter";
+    max-width: 600px;
+    width: 420px;
+    text-align: center;
+    color:#012241;
+    position: relative;
+    top: -30px;
+    left: 30px;
+    display: flex;
+}
+
+/* La imagen del proyecto */
+.image2 {
+  position: relative;
+  float: right;
+  max-width: 600px;
+  top: -350px;
+}
+
+/* La imagen del proyecto */
+.side-image2 {
+
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 300px;
+  
+}
+
+/* El botón de visita del proyecto. */
+.button-web2 {
+    position: relative;
+    top:-10px;
+    margin-left: 160px;
+    background-color: #f9dce5; /* light beige */
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 999px; /* pill shape */
+    cursor: pointer;
+    text-decoration: none;
+    color: #012241;
+}
+
+.project-title2 {
+
+    font-family: "Inter";
+    text-align: left;
+    position: relative;
+    left: 160px;
+    top: 70px;
+    font-size: 28px;
+    color: #012241;
+}
+
+/* _______________________________________________________________*/
+
+.footer {
+  position: relative;
+  top: 0px;
+  max-width: 1480px;
+  width: 1470px;
+  background:#012241;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  height: 490px;
+}
+
+/*La fila del footer*/
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 60px;
+}
+
+/*La columna del footer*//*Los títulos de la fila del footer*/
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Anta";
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*El estilo de los vínculos*/
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer-col .links li a:hover {
+  color: #f9dce5;
+}
+
+/*El estilo del párrafo*/
+.footer-col p {
+  margin: 20px 0;
+  color: white;
+  position: relative;
+  top:25px;
+  max-width: 300px;
+  font-size: 40px;
+}
+
+/*El estilo de los íconos*/
+.icons {
+  position: relative;
+  top:25px;
+}
+
+.icons-click {
+  text-decoration: none;
+}
+
+.icon {
+    width:40px;
+    height:40px;
+    object-fit: contain; /*Los objetos tienen una posición en donde toman todo el espacio necesario. */
+  
+}
+

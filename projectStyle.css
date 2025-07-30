@@ -1,0 +1,270 @@
+/* Se establece el tipo de letra en la página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+/* La barra de navegación*/
+.topnav {
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#012241;
+    padding:35px 40px;
+    font-family: "Inter";
+}
+
+.logo {
+    font-weight:bold;
+    color:#f9dce5;
+    margin-left: 120px; /* Permite mover la palabra hacia la izquierda */
+    font-size: 65px;
+    text-decoration: none;
+    
+}
+
+.logo a {
+    color:#f9dce5;
+    text-decoration: none;
+}
+
+/* La barra de navegación y el color de los enlaces*/
+.topnav-links {
+   display: flex;
+   gap: 30px;
+   margin-right:120px;
+}
+
+.topnav-links a {
+   font-size: 23px;
+   color: #FED7DF;
+   text-decoration: none;
+  
+}
+
+
+/* La barra de navegación y el cambio de color al detenerse el ratón*/
+.topnav a:hover {
+    background-color:#FED7DF;
+    color: 012241;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #f9dce5;
+    color:#012241;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #012241;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* _______________________________________________________________*/
+
+/* Contiene todo el contenido del DIV */ /* Contiene el texto: Hola */
+.intro-container {
+    display:flex;
+    justify-content: space-between;
+    font-size: 53px;
+    font-weight: bold;
+
+}
+
+/* Continuidad del DIV */ /* Contiene el texto: Hola */
+.sub-container {
+    max-width: 500px;
+    margin: 0;
+    padding:5px;
+    margin-left: 65px;
+}
+
+/* Texto de introducción: Hola!*/
+.intro-title {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 105px;
+    padding-top:120px ;
+}
+
+/* Parrafo introductorio.*/
+.body-text {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 3%;
+}
+
+/* Botón de LinkeIn.*/
+button {
+    background-color:#012241;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+    left: 175px;
+    position:absolute;
+    font-family: "Inter";
+   
+}
+
+/* Color del hipervínculo.*/
+button a {
+    color:#f9dce5;
+   
+}
+
+/* Sección de proyectos.*/
+.main-container {
+  position: relative;
+  width: 1485px;
+  height: 560px;
+  background:linear-gradient(to top,#012241,#DACEC8);
+  
+}
+
+/* Titulo. */
+.project-title {
+    font-size: 37px;
+    font-family: "Inter";
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left: 10px;
+    color:#012241
+}
+
+/* párrafo que contiene la descripción de los proyectos*/
+.text-pro {
+    font-size: 22px;
+    font-family: "Inter";
+    display:flex;
+    flex-direction:column;
+    line-height: 1.5;
+    max-width: 800px;
+    position: relative;
+    top: 50px;
+    left:350px;
+    text-align: center;
+    color: #012241;
+
+}
+
+/* Contenedor del botón*/
+.button-item {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* space between buttons */
+  align-items: center;
+  margin-left: 80px;
+ 
+}
+
+/* El estilo del botón. */
+.button-style {
+  background-color: #dacdc6; /* light beige */
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 999px; /* pill shape */
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color:#012241
+
+}
+
+/* __________________________________ */
+
+.footer {
+  position: relative;
+  top: 0px;
+  max-width: 1480px;
+  width: 1470px;
+  background:#012241;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  height: 490px;
+}
+
+/*La fila del footer*/
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 60px;
+}
+
+/*La columna del footer*//*Los títulos de la fila del footer*/
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Anta";
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*El estilo de los vínculos*/
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer-col .links li a:hover {
+  color: #f9dce5;
+}
+
+/*El estilo del párrafo*/
+.footer-col p {
+  margin: 20px 0;
+  color: white;
+  position: relative;
+  top:25px;
+  max-width: 300px;
+  font-size: 40px;
+}
+
+/*El estilo de los íconos*/
+.icons {
+  position: relative;
+  top:25px;
+}
+
+.icons-click {
+  text-decoration: none;
+}
+
+.icon {
+    width:40px;
+    height:40px;
+    object-fit: contain; /*Los objetos tienen una posición en donde toman todo el espacio necesario. */
+  
+}

@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+/* La barra de navegación*/
+.topnav {
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#012241;
+    padding:35px 40px;
+    font-family: "Inter";
+}
+
+.logo {
+    font-weight:bold;
+    color:#f9dce5;
+    margin-left: 120px; /* Permite mover la palabra hacia la izquierda */
+    font-size: 65px;
+    text-decoration: none;
+    
+}
+
+.logo a {
+  color: #f9dce5;
+  text-decoration: none;
+}
+
+/* La barra de navegación y el color de los enlaces*/
+.topnav-links {
+   display: flex;
+   gap: 30px;
+   margin-right:120px;
+}
+
+.topnav-links a {
+   font-size: 23px;
+   color: #FED7DF;
+   text-decoration: none;
+  
+}
+
+
+/* La barra de navegación y el cambio de color al detenerse el ratón*/
+.topnav a:hover {
+    background-color:#FED7DF;
+    color: 012241;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #f9dce5;
+    color:#012241;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #012241;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*___________________________________________________ */
+
+
+/* Contendor principal */
+.main-container {
+    background-color: #f9dce5 ;
+    position: relative;
+    max-width: 1900px;
+    width: 1470px;
+    height: 600px;
+    
+}
+
+/* El titulo de la página: Páaginas Web */
+.title {
+    font-size: 40px;
+    font-family: "Anta";
+    text-align: center;
+    position: relative;
+    top: 45px;
+    color: #012241;
+    white-space: nowrap;
+}
+
+.contact-text {
+    text-align: center;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    top: 35px;
+    color:#012241
+}
+
+
+.maintain-contact {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top:80px;
+    color:#012241;
+    line-height: 1.8;
+
+}
+
+.contact-item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    top:30px;
+    margin-left: 640px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-item .icon {
+    width:24px;
+    height: 24px;
+    align-items: center;
+
+}
+
+.horizontal-line {
+    border-top: 5px solid #012241;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.contact-item2 {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    bottom:5px;
+    font-family: "Inter";
+    font-size: 23px;
+    top:10px;
+    line-height: 1.8;
+}
+
+.contact-item2 .icon {
+    width:30px;
+    height: 30px;
+    align-items: center;
+
+}
+
+/* ___________________________ */
+
+.footer {
+  position: relative;
+  top: 0px;
+  max-width: 1480px;
+  width: 1470px;
+  background:#012241;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  height: 490px;
+}
+
+/*La fila del footer*/
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 60px;
+}
+
+/*La columna del footer*//*Los títulos de la fila del footer*/
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Anta";
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*El estilo de los vínculos*/
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer-col .links li a:hover {
+  color: #f9dce5;
+}
+
+/*El estilo del párrafo*/
+.footer-col p {
+  margin: 20px 0;
+  color: white;
+  position: relative;
+  top:25px;
+  max-width: 300px;
+  font-size: 40px;
+}
+
+/*El estilo de los íconos*/
+.icons {
+  position: relative;
+  top:25px;
+}
+
+.icons-click {
+  text-decoration: none;
+}
+
+.icon {
+    width:40px;
+    height:40px;
+    object-fit: contain; /*Los objetos tienen una posición en donde toman todo el espacio necesario. */
+  
+}

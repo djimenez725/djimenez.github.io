@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+/* La barra de navegación*/
+.topnav {
+
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:#012241;
+    padding:35px 40px;
+    font-family: "Inter";
+}
+
+.logo {
+    font-weight:bold;
+    color:#f9dce5;
+    margin-left: 120px; /* Permite mover la palabra hacia la izquierda */
+    font-size: 65px;
+    text-decoration: none;
+    
+}
+
+.logo a {
+  color:#f9dce5;
+  text-decoration: none;
+}
+
+/* La barra de navegación y el color de los enlaces*/
+.topnav-links {
+   display: flex;
+   gap: 30px;
+   margin-right:120px;
+}
+
+.topnav-links a {
+   font-size: 23px;
+   color: #FED7DF;
+   text-decoration: none;
+  
+}
+
+
+/* La barra de navegación y el cambio de color al detenerse el ratón*/
+.topnav a:hover {
+    background-color:#FED7DF;
+    color: 012241;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #f9dce5;
+    color:#012241;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #012241;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ______________________________________________________________________ */
+
+/* Primera sección de la página: Imagen profesional y mi declaración personal */ 
+
+/* Contenedor principal que contiene la imagen y la descripción */
+.main-container {
+    display: flex;
+}
+
+/* Especificaciones de la imagen */
+.side-photo {
+    display: flex;
+    max-width: 800px;  /* Permite que a la imagen no se le pase el ancho */
+    width:650px;  /* Establece el ancho de la imagen  */
+    height: 650px; /* Establece la altura de la imagen  */
+    object-fit:cover; /* Permite que la imagen se ajuste al contenedor  */
+    flex:1;  /*  Permite que la imagen ocupe el espacio disponible  */
+}
+
+/* Texto de introducción de mi persona */
+.intro-text {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 19px;
+    position: relative;
+    line-height: 1.5;
+    max-width: 500px;
+    left: 120px;
+}
+
+/* Botón: LinkedIn */
+.Linkedin-button {
+  padding: 10px 20px;
+  background-color: #012241;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  top: 100px;
+  position: absolute;
+  top: 720px;
+  left: 1125px;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+/* Contenedor de las habilidades (Fondo azul) */
+.skills-container {
+    background-color: #012241;
+    max-width: 1500px;
+    width:1475px;
+    height: 570px;
+}
+
+/* Contenedor rozado (Fondo rosado) */
+.pink-container {
+    position: absolute;
+    top: 798px;
+    left: 350px;
+    background-color: #FED7DF;
+    max-width: 1000px;
+    width: 850px;
+    height: 500px;
+}
+
+/* Titulo */
+.title-skills {
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Anta";
+    text-align: center;
+    color:#012241;
+}
+
+/* Iconos en forma de estrella */
+.icon {
+    width:20px;
+    height:20px;
+    object-fit: contain; /*Los objetos tienen una posición en donde toman todo el espacio necesario. */
+    position: relative;
+    top:50px;
+    left:80px;
+}
+
+/* Títulos de las habilidades */
+.title-skill {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    bottom:5px;
+    font-family: "Inter";
+    font-size: 23px;
+    left: 100px;
+    top:50px;
+    line-height: 3.7;
+}
+
+/* Descripción de las habilidades y estos son los que se encuentran en la derecha. */
+.descript-skills {
+    position: relative;
+    align-items: center;
+    text-align: left;
+    bottom:5px;
+    font-family: "Inter";
+    font-size: 23px;
+    left: 700px;
+    top:130px;
+    line-height: 3.7;
+}
+
+
+/* ___________________________________________ */
+
+/*Footer de la página*/
+.footer {
+  position: absolute;
+  top: 1360px;
+  max-width: 1480px;
+  width: 1470px;
+  background:#012241;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  height: 490px;
+}
+
+/*La fila del footer*/
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 60px;
+}
+
+/*La columna del footer*//*Los títulos de la fila del footer*/
+.footer-row .footer-col h4 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Anta";
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*El estilo de los vínculos*/
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: "Inter";
+}
+.footer-col .links li a:hover {
+  color: #f9dce5;
+}
+
+/*El estilo del párrafo*/
+.footer-col p {
+  margin: 20px 0;
+  color: white;
+  position: relative;
+  top:25px;
+  max-width: 300px;
+  font-size: 40px;
+}
+
+/*El estilo de los íconos*/
+.icons {
+  position: relative;
+  top:25px;
+}
+
+.icons-click {
+  text-decoration: none;
+}
+
+.icon2 {
+    width:40px;
+    height:40px;
+    object-fit: contain; /*Los objetos tienen una posición en donde toman todo el espacio necesario. */
+}
